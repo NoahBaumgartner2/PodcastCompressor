@@ -1137,7 +1137,7 @@ function connectDrive() {
   log('Leite zu Google Login weiter...', 'info');
 
   const oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
-  const redirectUri = 'http://localhost:8080';
+  const redirectUri = window.location.origin;
   const scope = 'https://www.googleapis.com/auth/drive.file';
 
   // URL für den direkten Redirect zusammenbauen
